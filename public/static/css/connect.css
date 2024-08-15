@@ -1,0 +1,87 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0px;
+    background-color: #c6c2c2;
+    min-height: 100vh;
+    position: relative;
+    font-size: 14px !important;
+    font-family: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+div.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 16px !important;
+}
+.mtop16{
+    margin-top: 16px;
+}
+.box{
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+.box_login{
+    top: -120px;
+}
+.btn-primary{
+    width: 100%;
+    background-color: #D0AC7A !important;
+    border: 0px !important;
+}
+
+.float-right {
+    float: right !important;
+}
+div a {
+    color: #845c44;
+    text-decoration: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+/*HEAD*/
+div .form-text{
+    padding-top: 5px;
+}
+.brand-wrap .logo, .navbar-brand .logo {
+    margin-right: 7px;
+    max-height: 100px;
+    display: inline-block;
+}
+
+/*FOOTER*/
+.padding-y {
+    padding-top: 15px;
+    padding-bottom: 60px;
+    background-color: #eeeeee;
+    position: absolute;
+    left:0px;
+    width:100%;
+    top: 100%;
+    
+}
+.border-top {
+    border-top: 1px solid #e4e4e4 !important;
+}
+.float-md-right {
+    float: right !important;
+}
+
+/*Estilos responsive*/
+@media (max-width: 575.98px) { 
+    .box{
+        width: 88%;
+    }
+    .padding-y{
+        top: 100% !important;
+    }
+}
+    

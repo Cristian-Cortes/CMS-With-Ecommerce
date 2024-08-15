@@ -1,0 +1,155 @@
+.blur{
+    filter:blur(2px)
+}
+.ccalert{
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    display: none;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.ccalert .ccalert_inside{
+    background-color: #fff;
+    border-radius: 12px;
+    min-width: 220px;
+    width: 420px;
+}
+.ccalert .ccalert_inside .ccalert_content{
+    color: #333;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 24px;
+    width: 100%;
+}
+.ccalert .ccalert_inside .ccalert_content h2, h5{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+.ccalert .ccalert_inside .ccalert_content h5{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+.ccalert .ccalert_inside .ccalert_content .icon{
+    display: block;
+    margin-top: 24px;
+    align-items: center;
+    width: 100%;
+}
+.ccalert .ccalert_inside .ccalert_content .icon img{
+    display: block;
+    margin: 0px auto;
+    width: 90px;
+}
+.ccalert .ccalert_inside .ccalert_content .icon ul{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0px;
+    margin-top: 16px;
+    padding: 0px;
+    list-style: none;
+}
+.ccalert .ccalert_inside .ccalert_content .icon ul li{
+    margin-bottom: 2px;
+}
+.ccalert .ccalert_inside .ccalert_content .icon ul li i{
+    position: relative;
+    color: red;
+    margin-right: 4px;
+    top: 2px;
+}
+.ccalert .ccalert_inside .ccalert_footer{
+    display: block;
+    width: 100%;
+}
+.ccalert .ccalert_inside .ccalert_footer .ccalert_btn_close{
+    border-top: 1px solid #f0f0f0;
+    color: #324742;
+    display: block;
+    font-weight: 700;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+.ccalert .ccalert_inside .ccalert_footer .ccalert_footer_other_btns{
+    margin-left: 7%;
+    width: 86%;
+}
+.ccalert .ccalert_inside .ccalert_footer .ccalert_footer_other_btns a.btn{
+    border-radius: 18px;
+    border: 0px;
+    color: #fff;
+    -webkit-box-shadow: 2px 12px 12px 0px rgba(0, 0, 0, 0.15);
+    -mox-box-shadow: 2px 12px 12px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 2px 12px 12px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 24px;
+    width: 100%;
+    text-transform: uppercase;
+    display: block;
+}
+.ccalert .ccalert_inside .ccalert_footer .ccalert_footer_other_btns a.btn-success{
+    background-color: #44bb5b;
+}
+.ccalert .ccalert_inside .ccalert_footer .ccalert_footer_other_btns a.btn-primary{
+    background-color: #0086d6;
+}
+.ccalert .ccalert_inside .ccalert_footer .ccalert_footer_other_btns a.btn-info{
+    background-color: #ffbb00;
+}
+.ccalert .ccalert_inside .ccalert_footer .ccalert_footer_other_btns a.btn-danger{
+    background-color: #f9461c;
+}
+
+.ccalert_animation_show{
+    animation-timing-function: ease-in-out;
+    animation: alert_show 0.5s forwards;
+}
+.ccalert_animation_hide{
+    animation-timing-function: ease-in-out;
+    animation: alert_hide 0.5s forwards;
+}
+.scale_animation{
+    animation: scale 0.3s forwards;
+    transition: all 0.6s ease-in-out;
+}
+@keyframes alert_show{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes alert_hide{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes alert_scale{
+    0%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .ccalert .ccalert_inside{
+        width: 86%;
+    }
+}
